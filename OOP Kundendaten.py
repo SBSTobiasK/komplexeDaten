@@ -10,6 +10,9 @@ class Kunde:
         # z.B. ob @ enthalten ist usw ...
         self.e_mail = neu
 
+    def getemail(self):
+        return self.e_mail
+
 
 kunde_1 = Kunde()
 kunde_1.vorname = "Hans"
@@ -32,3 +35,6 @@ kunde_1.ueberschreiben("neu@gmx.de")
 
 kunde_1.ausgabe()
 kunde_2.ausgabe()
+
+mail = kunde_1.getemail()
+print(mail)
