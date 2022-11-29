@@ -7,6 +7,18 @@ class Kunde:
     __hausnr = ""
     __plz = ""
     __ort = ""
+    __bestellungen = []
+
+    def addBestellung(self, bestellung):
+        self.__bestellungen.append(bestellung)
+
+    def stornoAlle(self):
+        self.__bestellungen = []
+
+    def getBestellungen(self):
+        return self.__bestellungen
+
+
 
     def setVorname(self, vorname):
         self.__vorname = vorname

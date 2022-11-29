@@ -18,5 +18,15 @@ print(bestellung_1.getBezeichnung())
 
 kunde_1 = Kunde()
 kunde_1.setVorname("test")
+kunde_1.addBestellung(bestellung_1)
+
+bestellung_2 = Bestellung()
+bestellung_2.setBezeichnung("Best2")
+
+kunde_1.addBestellung(bestellung_2)
 
 print(kunde_1.getVorname())
+
+bst = kunde_1.getBestellungen()
+
+print(bst[0].getBezeichnung())
