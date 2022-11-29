@@ -30,3 +30,9 @@ print(kunde_1.getVorname())
 bst = kunde_1.getBestellungen()
 
 print(bst[0].getBezeichnung())
+
+kunde_1.stornoAlle()
+
+bst = kunde_1.getBestellungen()
+
+print(bst)
