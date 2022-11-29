@@ -12,7 +12,7 @@ class Kunde:
         self.__vorname = vorname
 
     def getVorname(self):
-        return __self.__vorname
+        return self.__vorname
 
     def setNachname(self, nachname):
         self.__nachname = nachname
