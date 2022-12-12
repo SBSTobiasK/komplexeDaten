@@ -39,14 +39,15 @@ bst = kunde_1.getBestellungen()
 print(bst)
 
 artikel_a = Artikel()
-artikel_a.setBezeichnung("TEST1")
+artikel_a.setBezeichnung("TESTARTIKELBEZEICHNUNG1")
 print(artikel_a.getBezeichnung())
 
 artikel_b = Artikel()
-artikel_b.setBezeichnung("TEST2")
+artikel_b.setBezeichnung("TESTARTIKELBEZEICHNUNG2")
 
 bestellung_1.setArtikel(artikel_a)
 bestellung_1.setArtikel(artikel_b)
 
 art = bestellung_1.getArtikel()
+print(art[0].getBezeichnung())
 print(art[1].getBezeichnung())
