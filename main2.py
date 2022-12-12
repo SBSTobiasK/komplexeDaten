@@ -1,5 +1,6 @@
 from wirtschaft import Bestellung
 from wirtschaft import Kunde
+from wirtschaft import Artikel
 
 bestellung_1 = Bestellung()
 bestellung_1.setMenge(1)
@@ -36,3 +37,16 @@ kunde_1.stornoAlle()
 bst = kunde_1.getBestellungen()
 
 print(bst)
+
+artikel_a = Artikel()
+artikel_a.setBezeichnung("TEST1")
+print(artikel_a.getBezeichnung())
+
+artikel_b = Artikel()
+artikel_b.setBezeichnung("TEST2")
+
+bestellung_1.setArtikel(artikel_a)
+bestellung_1.setArtikel(artikel_b)
+
+art = bestellung_1.getArtikel()
+print(art[1].getBezeichnung())

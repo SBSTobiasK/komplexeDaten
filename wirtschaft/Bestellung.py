@@ -4,6 +4,13 @@ class Bestellung:
     __versandkosten = ""
     __bestellnummer = ""
     __bezeichnung = ""
+    __artikel = []
+
+    def setArtikel(self, art):
+        self.__artikel.append(art)
+
+    def getArtikel(self):
+        return self.__artikel
 
     def setMenge(self, menge):
         self.__menge = menge
