@@ -1,6 +1,7 @@
 from wirtschaft import Bestellung
 from wirtschaft import Kunde
 from wirtschaft import Artikel
+from wirtschaft import Auto
 
 bestellung_1 = Bestellung()
 bestellung_1.setMenge(1)
@@ -51,3 +52,14 @@ bestellung_1.setArtikel(artikel_b)
 art = bestellung_1.getArtikel()
 print(art[0].getBezeichnung())
 print(art[1].getBezeichnung())
+
+auto1 = Auto()
+auto1.setMarke("Fiat")
+auto1.setFarbe("rot")
+auto1.setTuerenanzahl("5")
+print(auto1.getMarke())
+print(auto1.getFarbe())
+print(auto1.getTuerenanzahl())
+auto1.gibGas()
+
+auto2 = Auto()
