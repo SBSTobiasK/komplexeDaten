@@ -5,6 +5,12 @@ class Artikel:
     __menge = ""
     __mwstsatz = ""
 
+    def __init__(self, anr, preis, bez, menge, mwst):
+        self.__artikelnummer = anr
+        self.__preis = preis
+        self.__bezeichnung = bez
+        self. __menge = menge
+        self. __mwstsatz = mwst
     def setArttikelnummer(self, anr):
         self.__artikelnummer = anr
 

@@ -2,6 +2,7 @@ from wirtschaft import Bestellung
 from wirtschaft import Kunde
 from wirtschaft import Artikel
 from wirtschaft import Auto
+from wirtschaft import Cabrio
 
 bestellung_1 = Bestellung()
 bestellung_1.setMenge(1)
@@ -63,3 +64,13 @@ print(auto1.getTuerenanzahl())
 auto1.gibGas()
 
 auto2 = Auto()
+
+cabrio1 = Cabrio()
+
+cabrio1.setMarke("Lotus")
+print(cabrio1.getMarke())
+cabrio1.oeffneVerdeck()
+
+auto1.gibGas()
+cabrio1.gibGas()
+
